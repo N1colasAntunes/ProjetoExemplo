@@ -1,0 +1,16 @@
+CREATE DATABASE dbExemplo;
+USE dbExemplo;
+
+CREATE TABLE Usuarios(
+	Id INT PRIMARY KEY,
+    Nome VARCHAR(40) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Senha VARCHAR(40) NOT NULL
+);
+CREATE TABLE Produtos(
+	Id INT PRIMARY KEY,
+    Nome VARCHAR(40) NOT NULL,
+    Descricao VARCHAR(50),
+    Preco DECIMAL(10,4) NOT NULL,
+    Quantidade INT NOT NULL
+);
